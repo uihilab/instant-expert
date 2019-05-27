@@ -1,6 +1,6 @@
 <p align="center"><img alt="InstantExpert" title="InstantExpert" src="figures/title-logo.png" width="250"></p>
 
-<!------
+<!--
 <h1 align="center">  </h1> <br>
 <p align="center">
   <img alt="InstantExpert" title="InstantExpert" src="figures/title-logo.png" width="450">
@@ -27,7 +27,7 @@
 
 ## Introduction
 
-This project introduces the Instant Expert; a web component that will allow the stable and efficient integration of a natural language question answering system to web-based information systems in any domain. The component consists of the user input (i.e. text, voice, multi-selection), question processing, and user interface modules. Two use cases are developed and provided to demonstrate the component’s features, benefits, and usage. The goal of this project is to pave the way for next-generation information systems by mitigating the challenges of developing voice-enabled and domain-informed smart assistants for the associates of any domain.
+This project introduces the Instant Expert; a lightweight web component that will allow the stable and efficient integration of a natural language question answering system to web-based information systems in any domain. The component consists of the user input (i.e. text, voice, multi-selection), question processing, and user interface modules. Two use cases are developed and provided to demonstrate the component’s features, benefits, and usage. The goal of this project is to pave the way for next-generation information systems by mitigating the challenges of developing voice-enabled and domain-informed smart assistants for the associates of any domain.
 
 ## How To Use
 

@@ -1,0 +1,136 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "express@~3.2.4",
+        "scope": null,
+        "escapedName": "express",
+        "name": "express",
+        "rawSpec": "~3.2.4",
+        "spec": ">=3.2.4 <3.3.0",
+        "type": "range"
+      },
+      "/home/ubuntu/workspace"
+    ]
+  ],
+  "_from": "express@>=3.2.4 <3.3.0",
+  "_id": "express@3.2.6",
+  "_inCache": true,
+  "_location": "/express",
+  "_npmUser": {
+    "name": "tjholowaychuk",
+    "email": "tj@vision-media.ca"
+  },
+  "_npmVersion": "1.2.14",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "express@~3.2.4",
+    "scope": null,
+    "escapedName": "express",
+    "name": "express",
+    "rawSpec": "~3.2.4",
+    "spec": ">=3.2.4 <3.3.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/express/-/express-3.2.6.tgz",
+  "_shasum": "d8a9fe065adc23c5b41ec2c689c672b261430ffc",
+  "_shrinkwrap": null,
+  "_spec": "express@~3.2.4",
+  "_where": "/home/ubuntu/workspace",
+  "author": {
+    "name": "TJ Holowaychuk",
+    "email": "tj@vision-media.ca"
+  },
+  "bin": {
+    "express": "./bin/express"
+  },
+  "bugs": {
+    "url": "https://github.com/visionmedia/express/issues"
+  },
+  "contributors": [
+    {
+      "name": "TJ Holowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    {
+      "name": "Aaron Heckmann",
+      "email": "aaron.heckmann+github@gmail.com"
+    },
+    {
+      "name": "Ciaran Jessup",
+      "email": "ciaranj@gmail.com"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "email": "rauchg@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "buffer-crc32": "0.2.1",
+    "commander": "0.6.1",
+    "connect": "2.7.11",
+    "cookie": "0.1.0",
+    "cookie-signature": "1.0.1",
+    "debug": "*",
+    "fresh": "0.1.0",
+    "methods": "0.0.1",
+    "mkdirp": "0.3.4",
+    "range-parser": "0.0.4",
+    "send": "0.1.0"
+  },
+  "description": "Sinatra inspired web development framework",
+  "devDependencies": {
+    "connect-redis": "*",
+    "ejs": "*",
+    "hjs": "*",
+    "jade": "*",
+    "marked": "*",
+    "mocha": "*",
+    "should": "*",
+    "stylus": "*",
+    "supertest": "0.6.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "d8a9fe065adc23c5b41ec2c689c672b261430ffc",
+    "tarball": "https://registry.npmjs.org/express/-/express-3.2.6.tgz"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "homepage": "https://github.com/visionmedia/express#readme",
+  "keywords": [
+    "express",
+    "framework",
+    "sinatra",
+    "web",
+    "rest",
+    "restful",
+    "router",
+    "app",
+    "api"
+  ],
+  "main": "index",
+  "maintainers": [
+    {
+      "name": "tjholowaychuk",
+      "email": "tj@vision-media.ca"
+    }
+  ],
+  "name": "express",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/visionmedia/express.git"
+  },
+  "scripts": {
+    "prepublish": "npm prune",
+    "test": "make test"
+  },
+  "version": "3.2.6"
+}

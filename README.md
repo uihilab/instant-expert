@@ -102,7 +102,7 @@ There are a number of attributes to customize the InstantExpert web component wh
 ### Microsoft Cognitive Services - Project Answer Search
 We have developed an open-source example use case to use Expert Web Component to ask natural language questions to get factual responses using [the Project Answer Search by Microsoft Cognitive Services Lab](https://labs.cognitive.microsoft.com/en-us/project-answer-search).
 
-- To test this example by yourself, just download [examples/bing-bot/index.html](examples/bing-bot/index.html) and run it on Google Chrome.
+- To test this example by yourself, just download [examples/bing-bot/use-case](examples/bing-bot/use-case) and run *index.html* on Google Chrome.
   - It uses an engine that is hosted on Heroku for free, and it is subject to limitations.
   - The first time a question is asked, system might take few seconds to wake up Heroku. After that, the responses should be instantaneous.
   - It is only intended for demonstration purposes, and not advised and allowed for production use.

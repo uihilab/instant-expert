@@ -7,7 +7,7 @@
 </p>-->
 
 <h3 align="center">
-  A Generalized Web Component for Domain-Independent Natural Language Question Answering
+  A Generalized Web Component for Domain-Independent Smart Assistants
 </h3>
 
 <br>

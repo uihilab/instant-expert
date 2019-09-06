@@ -29,6 +29,8 @@
 
 This project introduces the Instant Expert; a lightweight web component that will allow the stable and efficient integration of a natural language question answering system to web-based information systems in any domain. The component consists of the user input (i.e. text, voice, multi-selection), question processing, and user interface modules. Two use cases are developed and provided to demonstrate the component’s features, benefits, and usage. The goal of this project is to pave the way for next-generation information systems by mitigating the challenges of developing voice-enabled and domain-informed smart assistants for the associates of any domain.
 
+For the complete paper, please visit [https://arxiv.org/abs/1909.02507](https://arxiv.org/abs/1909.02507)
+
 ## How To Use
 
 The InstantExpert do not require any frameworks and can be integrated into any website using pure HTML. To use it, please follow the steps below.

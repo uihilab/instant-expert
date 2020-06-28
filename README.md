@@ -125,10 +125,9 @@ The presented web component is supported by default in;
 - Mozilla Firefox
 - Opera
 - Safari
+- Microsoft Edge
 
-Together, these browsers have a total market share of 85.6% as of February 2019.
-
-The speech recognition is only supported in Google Chrome, Opera, and Microsoft Edge Dev which constitute approximately the 57.8% of all users, as of June 2019.
+The speech recognition is only supported in Google Chrome, Opera, and Microsoft Edge.
 
 Sources: [Mozilla](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [W3Counter](https://www.w3counter.com/globalstats.php), [Can I Use Speech Recognition](https://caniuse.com/#search=speech)
 

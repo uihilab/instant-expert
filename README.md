@@ -35,14 +35,9 @@ For the complete paper, please visit [https://arxiv.org/abs/1909.02507](https://
 
 The InstantExpert do not require any frameworks and can be integrated into any website using pure HTML. To use it, please follow the steps below.
 
-- Make sure Jquery is imported:
+- Download the library and import InstantExpert as a script:
 ```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-```
-
-- Import InstantExpert as a script:
-```html
-<script src="https://cdn.jsdelivr.net/gh/uihilab/expert-web-component@master/lib/instant-expert.js" type="text/javascript"></script>
+<script src="lib/instant-expert.js" type="text/javascript"></script>
 ```
 
 - Include the web component <instant-expert> in your html and set the 'engine' to your webhook:

@@ -96,24 +96,21 @@ There are a number of attributes to customize the InstantExpert web component wh
 
 ## Use Cases
 
-### Microsoft Cognitive Services - Project Answer Search
+### Q&A Mode
+
+### Knowledge Engine Mode (External)
+
+#### Microsoft Cognitive Services - Project Answer Search
 We have developed an open-source example use case to use Expert Web Component to ask natural language questions to get factual responses using [the Project Answer Search by Microsoft Cognitive Services Lab](https://labs.cognitive.microsoft.com/en-us/project-answer-search).
 
-- To test this example by yourself, just download [examples/bing-bot/use-case](examples/bing-bot/use-case) and run *index.html* on Google Chrome.
+- To test this example by yourself, just download [examples/engine/bing-bot/use-case](examples/engine/bing-bot/use-case) and run *index.html* on supported browsers.
   - It uses an engine that is hosted on Heroku for free, and it is subject to limitations.
   - The first time a question is asked, system might take few seconds to wake up Heroku. After that, the responses should be instantaneous.
   - It is only intended for demonstration purposes, and not advised and allowed for production use.
   
-- To modify/host this example yourself, please follow the directions on [examples/bing-bot/bot-source](examples/bing-bot/bot-source)
+- To modify/host this example yourself, please follow the directions on [examples/engine/bing-bot/bot-source](examples/engine/bing-bot/bot-source)
 
-![Screenshot 1](figures/bing-bot-3.png)
-
-### The Flood Expert
-The presented framework have been implemented in the field of flooding as part of the Iowa Flood Information System (IFIS), and named as "Flood Expert" (Sermet and Demir 2018). IFIS is a one-stop web-based platform for real-time and historical flood-related data management, analysis, and visualization including flood inundation maps, flood conditions and forecasts (Demir and Krajewski, 2013). The framework powers its data resources and capabilities using IFIS for flood-related knowledge generation. Figures below show the framework’s integration with IFIS to establish a precedent.
-
-This use case is not open-source, however, is beneficial to demonstrate the Expert Web Component's real-life usage in environmental sciences.
-
-Usage of Flood Expert to control the IFIS functionalities via natural language questions. | The list interface that allows the exploration of the supported questions grouped into broad categories.
+Conversation Screen | List of Example Questions
 :-------------------------:|:-------------------------:
 ![Screenshot 1](figures/ifis-2.png)  |  ![Screenshot 2](figures/ifis-3.png)
 

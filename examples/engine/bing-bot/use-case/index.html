@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="data:,">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+
+  <title>Instant Expert - Engine Demo</title>
+  <script type="module" src="../../../../lib/dist/instant-expert-dist.js" onload="initExpert()"></script>
+
+</head>
+<style type="text/css">
+	body {
+    background-image: url("images/circuit.gif");
+	}
+</style>
+
+<body>
+
+  <!-- The 'engine' mode requires a server-side chatbot created externally (e.g. DialogFlow, custom) 
+      The endpoint to make POST requests should be provided as a parameter, as can be seen below. -->
+
+  <instant-expert id="ms-bing-assistant" mode="engine" engine="https://expert-component-example-bing.herokuapp.com/"></instant-expert>
+
+
+
+  <script type="text/javascript">
+    /* THIS IS OPTIONAL 
+      - Below code shows how to add example questions to help the user how to use the bot.
+    */
+    function initExpert(){
+      var expert = document.getElementById("ms-bing-assistant");
+
+      var questionList = [
+                            ["Definition", ["What is machine learning?",
+                                            "What's a troodontidae?", 
+                                            "Is there such a thing as Satire comedy?",
+                                            "What RNA stands for?",
+                                            "What's the meaning of hydrograph?",]
+                            ],
+                            ["Reference", ["Which algorithms are used for predictive modeling?",
+                                           "How many medals did the US win in the 2012 summer Olympics?",
+                                           "When did Berlin host the Olympics?", 
+                                           "Who played Morpheus in The Matrix", 
+                                           "How tall is Barack Obama?", 
+                                          ]
+                            ],
+                            ["Conversational/Fun", ["How to find happiness?",
+                                                    "What's the first rule of Fight Club?",
+                                                    "What does the fox say",
+                                                    "Can you pass the Turing test?", 
+                                                    "How much wood could a woodchuck chuck, if a woodchuck could chuck wood?",
+                                                   ]
+                            ]
+                         ];
+
+      expert.setQuestions(questionList);
+    }
+  </script>
+</body>
+</html>

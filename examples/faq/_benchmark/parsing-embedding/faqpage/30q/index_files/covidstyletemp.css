@@ -1,0 +1,27 @@
+	/* Footer Nav Override */
+@media (max-width:992px) {
+.leftnav-wrapper nav > ul > li > ul {
+display: none;
+}
+
+.leftnav-wrapper nav > ul > li a.nav-expandcollapse {
+display: none !important;
+}
+}
+
+/* Left Nav Color Contrast */
+.theme-cyan nav ul.tp-nav-main li.active.selected>a:first-child{color:#006c80;}
+
+/* New Dropshadow */
+
+
+/* NonRounded Topborder */
+ div.card.bt-3{
+        border-radius:0rem;
+    }
+
+
+/* Print Button Mobile Hide */ 
+@media (max-width: 765px){
+#clickToPrint { display:none;}
+}

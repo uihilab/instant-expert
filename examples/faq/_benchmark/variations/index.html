@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="data:,">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+
+	<title>Instant Expert - FAQ Demo</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="module" src="../../../../lib/instant-expert.js" onload="initBenchmark()"></script>
+
+</head>
+<style type="text/css">
+	body {
+    	background-image: url("images/circuit.gif");
+	}
+</style>
+
+<body>
+
+	<!-- FOR BENCHMARKING PURPOSES ONLY -->
+	<!-- *** RUN ONLY ONE INSTANCE AT A TIME & COMMENT OUT THE REST *** -->
+
+	<instant-expert id="faq-assistant" mode="faq-model" faq-url="faq/instantexpert_faq_cdc.json"></instant-expert>
+
+
+	<script type="text/javascript">
+		async function initBenchmark(){
+			var cdcChatbot = document.getElementById("faq-assistant");
+			var cdc_FaqModule = cdcChatbot._faq;
+
+			// 0.1, 0.11, 0.12, ..., 0.99, 1
+			var coarseConfidenceThresholds = [...Array(100).keys()];
+			coarseConfidenceThresholds = coarseConfidenceThresholds.map(x => (x+1) / 100);
+			
+			// // 0.771, 0.772, ..., 0.78 
+			// var fineConfidenceThresholds = [...Array(10).keys()];
+			// fineConfidenceThresholds = fineConfidenceThresholds.map(x => ((x+1) / 1000) + 0.77);
+			 
+			// var confidenceThreshold = [0.75];
+
+			await cdc_FaqModule.waitUntilLoaded();
+
+		    $.getJSON("testset/variations.json", async function(data, status){
+		    	// console.log("Column Titles: <Question No, ", "Correct Answers, ", "Wrong Answers, ", "Answers Not Found>");
+
+		    	for (const confidence of coarseConfidenceThresholds){
+		    		var correctAnswer=0, wrongAnswer=0, answerNotFound=0;
+		    		cdc_FaqModule.setConfidenceThreshold(confidence);
+
+				    for (const [qgIndex, questionGroup] of data.entries()) {
+				        let question = questionGroup['question'];
+				        let answer = questionGroup['answer'];
+				        let variation = questionGroup['question-variation'];
+
+				        let generatedResponse = await cdc_FaqModule.getFAQResponse(variation);
+				        generatedResponse = generatedResponse["answer"].trim();
+
+				        if (generatedResponse.localeCompare(answer) == 0) {
+				        	correctAnswer++;
+				        }
+				        else if (generatedResponse.localeCompare("I'm sorry! I don't know the answer to that question.") == 0){
+				        	answerNotFound++;
+				        	// console.log("Not Answered: ", question, "\n", variation);
+				        }
+				        else {
+				        	// Wrong answer have been returned to the user. Bad for precision.
+				        	wrongAnswer++;
+				        }
+
+				        // console.log("Q" + qgIndex, correctAnswer, wrongAnswer, answerNotFound);
+			    	}
+			    	console.log("For confidence value " + confidence + ": ", correctAnswer, wrongAnswer, answerNotFound);
+				}
+			});
+
+		}
+
+	</script>
+
+</body>
+</html>

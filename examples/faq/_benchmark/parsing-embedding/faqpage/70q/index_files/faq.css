@@ -1,0 +1,50 @@
+	.filtered .accordion em.match-text {
+  background:#ff6;
+  font-weight:bold;
+  font-style:normal;
+}
+.filtered .mb-1,
+.filtered .mb-2,
+.filtered .mb-3 {
+	margin: 0!important;
+}
+.filtered .pt-1,
+.filtered .pt-2,
+.filtered .pt-3 {
+	padding-top: 0!important;
+}
+.filtered h3 {
+	margin-top: 0;
+}
+/* On this page and other top row content */
+.filtered > div.row:nth-child(2) {
+	display: none!important;
+}
+/* Footnotes */
+.filtered > div:last-child {
+	display: none!important;
+}
+/* See Also cards */
+.filtered .card.bl-3.bl-secondary.mb-3 {
+	display: none!important;
+}
+.content h3 {
+	font-size: 1.875rem !important;
+}
+
+.faq-filter .form-control-clear {
+	display: none;
+	position: absolute;
+	top: 65px;
+	right: 26px;
+	font-size: 1.6rem;
+}
+.faq-filter .form-control-clear:hover {
+	cursor: pointer;
+}
+.filtered a[href="#"] {
+               display: none;
+}
+.filtered .vc_empty_space  {
+               display: none;
+}

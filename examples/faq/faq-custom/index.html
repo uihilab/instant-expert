@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="data:,">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+
+	<title>Instant Expert - FAQ Demo</title>
+	<script type="module" src="../../../lib/instant-expert.js"></script>
+
+</head>
+<style type="text/css">
+	body {
+    background-image: url("images/circuit.gif");
+	}
+</style>
+
+<body>
+
+	<!-- Questions and answers are retrieved from FDA.gov -->
+	<instant-expert id="faq-assistant" mode="faq-custom">
+		<div slot="questions">
+			<p>What is a novel coronavirus?</p>
+			<p>Should I wear a face covering or face mask when I go out in public?</p>
+		</div>
+
+		<div slot="answers">
+			<p>A novel coronavirus is a new coronavirus that has not been previously identified. The virus causing coronavirus disease 2019 (COVID-19) is not the same as the coronaviruses that commonly circulate among humans and cause mild illness, like the common cold.</p>
+			<p>CDC recommends wearing cloth face coverings in public when other social distancing measures are difficult to maintain (e.g., grocery stores and pharmacies) especially in areas of significant community-based transmission of the coronavirus. The purpose of wearing cloth face coverings in public is to slow the spread of the virus and help people who may have the virus and do not know it from transmitting it to others. Read more about types of face masks and FDA’s emergency use authorization for non-surgical face masks.</p>
+		</div>
+	</instant-expert>
+
+</body>
+</html>

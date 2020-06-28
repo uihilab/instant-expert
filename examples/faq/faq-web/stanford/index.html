@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="data:,">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+
+	<title>Instant Expert - FAQ Demo</title>
+	<script type="module" src="../../../../lib/instant-expert.js"></script>
+
+</head>
+<style type="text/css">
+	body {
+    	background-image: url("images/circuit.gif");
+	}
+</style>
+
+<body>
+
+	<!-- This is an example of using an FAQ that is hosted on a different domain (i.e. cross-origin) 
+		- When providing the FAQ URL, a proxy server should be used.
+	-->
+
+	<instant-expert id="faq-assistant" mode="faq-web" faq-url="https://cors-anywhere.herokuapp.com/https://stanfordhealthcare.org/stanford-health-care-now/2020/novel-coronavirus/faqs-about-covid-19.html"></instant-expert>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* Raw JS */
+$( document ).ready( function() {
+
+	// The scope of what this logic will apply to.
+	var selectors = '.card-accordion';
+
+	// A function to reset everything back to non-filtered state.
+	var resetFilter = function() {
+		$( 'em.match-text' ).replaceWith( function() { return $( this ).text(); } );
+		$( 'matchTag' ).replaceWith( function() { return $( this ).text(); } );
+		$( selectors ).children().removeClass( 'match' );
+		$( selectors ).children( '.card-header' ).each( function( index, elem ) {
+			$( elem ).addClass( 'collapsed' );
+			$( elem ).next().addClass( 'collapse' );
+			$( elem ).next().addClass( 'collapse' ).removeClass( 'show' );
+		} );
+		$( '.accordion' ).prev( 'h3' ).show();
+		$( selectors ).children( '.card-header' ).show();
+		$( selectors ).children( '.card-header' ).next().removeAttr( 'style' );
+	};
+
+	// Handle the clear search click
+	$( '.faq-filter .form-control-clear' ).on( 'click', function() {
+		$( '.faq-filter input' ).val( '' );
+		resetFilter( this );
+		$( this ).parents( '.syndicate' ).removeClass( 'filtered' );
+		$( this ).hide();
+	} );
+
+	// Utility function to add markup to highlight matched term
+	var processChildren = function( elem, match ) {
+		var contents = $( elem ).contents();
+		var textNodeCount = 0;
+		for ( var i = 0; i < contents.length; i++) {
+			var item = contents[ i ];
+			if ( Node.TEXT_NODE === item.nodeType ) {
+				var text = item.nodeValue;
+				if ( null !== text && '' !== text.trim() && -1 < text.toLowerCase().indexOf( match ) ) {
+					var newBlock = $( '<matchTag />' );
+					var newText = text.replace( /\u00a0/g, ' ' );
+					var re = new RegExp( '(' + match + ')', 'gi' );
+					var newHtml = newText.replace( re, '<em class="match-text">$1</em>' );
+					newBlock.html( newHtml );
+					newBlock.insertBefore( $( item ) );
+					$( item ).remove();
+				}
+			} else {
+				processChildren( $( item ), match );
+			}
+		}
+	};
+
+	// Handle the input into the search/filter input field
+	$( '#page-search' ).on( 'keyup', function() {
+		// Need to clear everything after each key press to show only the things that match.
+		resetFilter();
+		var searchingFor = $( this ).val().toLowerCase();
+		if ( 1 < searchingFor.length ) {
+			$( '.faq-filter .form-control-clear' ).show();
+			$( '.accordion' ).prev( 'h3' ).hide();
+			$( this ).parents( '.syndicate' ).addClass( 'filtered' );
+			$( selectors ).children( '.card-header' ).hide();
+			$( selectors ).children( '.card-header' ).next( 'div' ).hide();
+			$( selectors ).find( 'p, span, li' ).each( function( index, elem ) {
+				if ( -1 < $( elem ).text().toLowerCase().indexOf( searchingFor ) ) {
+					$( elem ).parents( '.card-accordion' ).children( '.card-header' ).removeClass( 'collapsed' ).show();
+					$( elem ).parents( '.card-accordion' ).children( '.card-header' ).next( 'div' ).removeClass( 'collapse' ).show();
+					$( elem ).parents( '.accordion' ).prev( 'h3' ).show();
+					processChildren( $( elem ), searchingFor );
+				}
+			} );
+			$( selectors ).children().find( '.match' ).show();
+		} else {
+			// If there is no input to be filtered on then remove the class that indicates the content is being filtered.
+			$( this ).parents( '.syndicate' ).removeClass( 'filtered' );
+			$( '.faq-filter .form-control-clear' ).hide();
+		}
+	} );
+} );
+
+/* End Raw JS */

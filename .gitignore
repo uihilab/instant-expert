@@ -1,1 +1,7 @@
 GITIGNORED-ONLY-FOR-OUR-RECORDS
+lib/backup
+lib/dist
+lib/package.json
+lib/package-lock.json
+lib/webpack.config.js
+lib/node_modules

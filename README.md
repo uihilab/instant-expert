@@ -98,12 +98,21 @@ There are a number of attributes to customize the InstantExpert web component wh
 
 ### Q&A Mode
 
+#### COVID-19 Case Study
+An information dissemination chatbot for COVID-19 has been developed to demonstrate the presented framework’s usage and benefits due to the urgent demand as COVID-19 pandemic is progressing. According to web analytics service (SimilarWeb, 2020), the CDC website has received the highest number of visits (i.e. traffic) among websites that are served in English and that offer information and statistics on the spread of the COVID-19 infection. Thus, we have selected the [CDC’s official Frequently Asked Questions webpage](https://www.cdc.gov/coronavirus/2019-ncov/faq.html) as a source for the following use cases. On that page, there is a total of 119 questions spanning various topics ranging from COVID-19 basics to cleaning and disinfection as of June 20, 2020.
+
+- To test this example by yourself, navigate to [examples/faq/faq-model/cdc](examples/faq/faq-model/cdc) and run *index.html* on supported browsers.
+
+Conversation Screen | List of Example Questions
+:-------------------------:|:-------------------------:
+![Screenshot 1](figures/screenshots/cdc-1.png)  |  ![Screenshot 2](figures/screenshots/cdc-2.png)
+
 ### Knowledge Engine Mode (External)
 
 #### Microsoft Cognitive Services - Project Answer Search
 We have developed an open-source example use case to use Expert Web Component to ask natural language questions to get factual responses using [the Project Answer Search by Microsoft Cognitive Services Lab](https://labs.cognitive.microsoft.com/en-us/project-answer-search).
 
-- To test this example by yourself, just download [examples/engine/bing-bot/use-case](examples/engine/bing-bot/use-case) and run *index.html* on supported browsers.
+- To test this example by yourself, navigate to [examples/engine/bing-bot/use-case](examples/engine/bing-bot/use-case) and run *index.html* on supported browsers.
   - It uses an engine that is hosted on Heroku for free, and it is subject to limitations.
   - The first time a question is asked, system might take few seconds to wake up Heroku. After that, the responses should be instantaneous.
   - It is only intended for demonstration purposes, and not advised and allowed for production use.

@@ -112,7 +112,7 @@ We have developed an open-source example use case to use Expert Web Component to
 
 Conversation Screen | List of Example Questions
 :-------------------------:|:-------------------------:
-![Screenshot 1](figures/ifis-2.png)  |  ![Screenshot 2](figures/ifis-3.png)
+![Screenshot 1](figures/screenshots/bing-1.png)  |  ![Screenshot 2](figures/screenshots/bing-2.png)
 
 ## Supported Browsers
 

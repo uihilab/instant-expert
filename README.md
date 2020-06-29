@@ -25,7 +25,6 @@
 - [Feedback](#feedback)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
-- [References](#references)
 
 ## Introduction
 

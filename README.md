@@ -37,7 +37,16 @@ For the complete paper, please visit [https://arxiv.org/abs/1909.02507](https://
 
 The InstantExpert do not require any frameworks and can be integrated into any website using pure HTML. To use it, please follow the steps below.
 
-- Download the library and import InstantExpert as a module-typed script:
+- Import the bundled version of Instant Expert as a script.
+```html
+<script src="dist/instant-expert-dist.js"></script>
+
+<!-- or, you can use a CDN as below -->
+
+<script src="https://cdn.jsdelivr.net/gh/uihilab/instant-expert@master/lib/dist/instant-expert-dist.js"></script>
+```
+
+Alternatively, you can download the library to make modifications, and test it by importing InstantExpert as a module-typed script:
 ```html
 <script src="instant-expert.js" type="module"></script>
 ```

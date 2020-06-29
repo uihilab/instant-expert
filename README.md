@@ -207,8 +207,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgements
 
 This project is developed by the University of Iowa Hydroinformatics Lab (UIHI Lab): [https://hydroinformatics.uiowa.edu/](https://hydroinformatics.uiowa.edu/).
-
-## References
-
-* Demir, I. and Krajewski, W.F., 2013. Towards an integrated flood information system: centralized data access, analysis, and visualization. Environmental Modelling & Software, 50, 77-84
-* Sermet, Y., & Demir, I. (2018). An intelligent system on knowledge generation and communication about flooding. Environmental Modelling & Software, 108, 51-60.

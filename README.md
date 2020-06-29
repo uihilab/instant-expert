@@ -40,6 +40,20 @@ The InstantExpert do not require any frameworks and can be integrated into any w
 <script src="lib/instant-expert.js" type="text/javascript"></script>
 ```
 
+### Q&A Mode
+
+A major motivation of Instant Expert is to augment existing web platforms with a plug-and-play importable web component with minimal effort. In most use cases, static and textual responses can suffice to help users find useful information that they were in pursuit of. Such pieces of information are often presented in a web platform in the form of Frequently Asked Questions (FAQ). However, searching for information via FAQs is often discouraging, hard to navigate, time-consuming, and results in failure of critical information communication in a timely manner. As a solution, the Q&A Mode of the Knowledge Generation Module is equipped with functionalities to parse and process FAQ pages and to efficiently and effectively map any user question into one of the question and answer couples in the generated knowledge base. Thus, the Instant Expert effortlessly enhances user experience by allowing the users to verbally communicate with the system and receive a direct response without the hassle of going through potentially hundreds of frequently asked questions. Figure below visualizes the workflow for the Q&A Mode.
+
+![Screenshot 1](figures/screenshots/cdc-1.png)
+
+#### FAQ from a web page
+
+#### FAQ from a custom list
+
+#### FAQ from a Model
+
+### Knowledge Engine Mode
+
 - Include the web component <instant-expert> in your html and set the 'engine' to your webhook:
 ```html
 <instant-expert id="bing-expert" engine="https://expert-component-example-bing.herokuapp.com/"></instant-expert>

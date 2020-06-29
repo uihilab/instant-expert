@@ -7,7 +7,7 @@
 </p>-->
 
 <h3 align="center">
-  A Generalized Web Component for Domain-Independent Smart Assistants
+  An Open-Source Web Framework for Effortless Chatbots: COVID-19 Case Study
 </h3>
 
 <br>

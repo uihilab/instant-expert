@@ -61,7 +61,7 @@ A major motivation of Instant Expert is to augment existing web platforms with a
 
 The Instant Expert can be initialized in the FAQ mode by providing a URL for an FAQ webpage as the source. Due to the cross-origin limitations, a proxy server (CORS Anywhere) needs to be utilized to retrieve the webpage contents. 
 
-If the developer enabled ```downloadModel``` attribute of the Instant Expert element, then the framework will generate a JSON file consisting of the tensor matrix and the Q&A couples. This JSON file can be hosted on a server and the URL to access the file can be provided to Instant Expert, as shown [below](#faq-from-a-model-recommended)
+If the developer enabled ```downloadModel``` attribute of the Instant Expert element, then the framework will generate a JSON file consisting of the tensor matrix and the Q&A couples. This JSON file can be hosted on a server and the URL to access the file can be provided to Instant Expert, as shown [in section 'FAQ from a Model'](#faq-from-a-model-recommended)
 
 ```html
 <instant-expert 

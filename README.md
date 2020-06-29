@@ -50,19 +50,40 @@ A major motivation of Instant Expert is to augment existing web platforms with a
 
 The Instant Expert can be initialized in the FAQ mode by providing a URL for an FAQ webpage as the source. Due to the cross-origin limitations, a proxy server (CORS Anywhere) needs to be utilized to retrieve the webpage contents. 
 
-![Screenshot 1](figures/faq-web.png)
+```html
+<instant-expert 
+    mode="faq-web" 
+    faq-url="YourProxyURL/https://www.cdc.gov/coronavirus/2019-ncov/faq.html">
+</instant-expert>
+```
 
 #### FAQ from a custom list
 
 Some use cases may require manual definition of question and answers instead of having or relying on an existing FAQ webpage. To enable such initialization, the Instant Expert presents a mode, called faq-custom, in which HTML Slot elements are utilized to allow the developer to specify questions and their corresponding answers as shown below.
 
-![Screenshot 1](figures/faq-custom.png)
+```html
+    <instant-expert mode="faq-custom">
+        <div slot="questions">
+            <p>Question 1</p>
+            <p>Question 2</p>
+        </div>
+        <div slot="answers">
+            <p>Answer 1</p>
+            <p>Answer 2</p>
+        </div>
+    </instant-expert>
+```
 
 #### FAQ from a Model (Recommended)
 
 Most of the parsing and embedding process takes place on the background (i.e. async) to allow users to continue normal operation, however, it still consumes client resources and requires varying time depending on client hardware. Both previous FAQ processing approaches (i.e. web, custom) come with the capability of extracting a JSON file containing the parsed Q&A couples along with their USE embeddings (e.g. a 512-dimensional tensor). This downloaded model file can be provided to the Instant Expert directly to eliminate the time and resources required for FAQ processing. This use case is suggested as the default method to ensure the users can use the chatbot immediately after the page is loaded. Since no new processing is done, the precision and recall values are the same as reported above. Example usage is presented below.
 
-![Screenshot 1](figures/faq-model.png)
+```html
+    <instant-expert 
+        mode="faq-model" 
+        faq-url="instantexpert_faq_cdc.json">
+    </instant-expert>
+```
 
 ### Knowledge Engine Mode
 

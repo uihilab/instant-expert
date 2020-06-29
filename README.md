@@ -16,9 +16,11 @@
 
 - [Introduction](#introduction)
 - [How To Use](#how-to-use)
+  - [Q&A Mode](#qa-mode)
+  - [Knowledge Engine Mode](#knowledge-engine-mode)
 - [Use Cases](#use-cases)
-  - [Microsoft Cognitive Services - Project Answer Search](#microsoft-cognitive-services---project-answer-search)
-  - [The Flood Expert](#the-flood-expert)
+  - [Q&A Mode - COVID-19 Case Study](#covid-19-case-study)
+  - [Knowledge Engine Mode - Microsoft Cognitive Services - Project Answer Search](#microsoft-cognitive-services---project-answer-search)
 - [Supported Browsers](#supported-browsers)
 - [Feedback](#feedback)
 - [License](#license)

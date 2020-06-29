@@ -7,7 +7,7 @@
 </p>-->
 
 <h3 align="center">
-  An Open-Source Web Framework for Effortless Chatbots: COVID-19 Case Study
+  An Open-Source Web Framework for Effortless Chatbots
 </h3>
 
 <br>

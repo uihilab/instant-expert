@@ -48,6 +48,10 @@ A major motivation of Instant Expert is to augment existing web platforms with a
 
 #### FAQ from a web page
 
+The Instant Expert can be initialized in the FAQ mode by providing a URL for an FAQ webpage as the source. Due to the cross-origin limitations, a proxy server (CORS Anywhere) needs to be utilized to retrieve the webpage contents. 
+
+![Screenshot 1](figures/faq-web.png)
+
 #### FAQ from a custom list
 
 #### FAQ from a Model
@@ -61,7 +65,7 @@ A major motivation of Instant Expert is to augment existing web platforms with a
 
 That's it! You can now use your virtual expert.
 
-### Optional Configurations
+#### Optional Configurations
 
 To add a list of example questions to allow the users to browse the questions that your expert is capable of answering, set the questions and their categories as shown below in JavaScript.
 
@@ -103,7 +107,7 @@ There are a number of attributes to customize the InstantExpert web component wh
 | no-voice            | boolean        | Disable voice input. If true, voice input will be disabled.  |
 | expert-button-src   | string         | The link for the source of the always-visible button to toggle the expert component. |
 
-#### Notes
+##### Notes
 
 * The link of the 'engine' webhook should use 'https' if voice-input is desired. If not, regular 'http' connection can be used.
 * If the HTTP request to the webhook needs modification, we encourage you to modify the source code of the Instant Expert Web Component and use it as you please.

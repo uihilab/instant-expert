@@ -37,9 +37,9 @@ For the complete paper, please visit [https://arxiv.org/abs/1909.02507](https://
 
 The InstantExpert do not require any frameworks and can be integrated into any website using pure HTML. To use it, please follow the steps below.
 
-- Download the library and import InstantExpert as a script:
+- Download the library and import InstantExpert as a module-typed script:
 ```html
-<script src="lib/instant-expert.js" type="text/javascript"></script>
+<script src="instant-expert.js" type="module"></script>
 ```
 
 ### Q&A Mode
@@ -51,6 +51,8 @@ A major motivation of Instant Expert is to augment existing web platforms with a
 #### FAQ from a web page
 
 The Instant Expert can be initialized in the FAQ mode by providing a URL for an FAQ webpage as the source. Due to the cross-origin limitations, a proxy server (CORS Anywhere) needs to be utilized to retrieve the webpage contents. 
+
+If the developer enabled ```downloadModel``` attribute of the Instant Expert element, then the framework will generate a JSON file consisting of the tensor matrix and the Q&A couples. This JSON file can be hosted on a server and the URL to access the file can be provided to Instant Expert, as shown [below](#faq-from-a-model-recommended)
 
 ```html
 <instant-expert 

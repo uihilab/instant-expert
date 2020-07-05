@@ -7,7 +7,7 @@
 </p>-->
 
 <h3 align="center">
-  An Open-Source Web Framework for Effortless Chatbots
+  A Semantic Web Framework for Automated Smart Assistants
 </h3>
 
 <br>

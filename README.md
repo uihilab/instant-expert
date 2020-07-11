@@ -32,6 +32,10 @@ This project presents the Instant Expert, an open-source web framework to build 
 
 For the full publication, please visit [https://arxiv.org/abs/2007.00747](https://arxiv.org/abs/2007.00747).
 
+Conversation Screen | List of Example Questions
+:-------------------------:|:-------------------------:
+![Screenshot 1](figures/screenshots/cdc-1.png)  |  ![Screenshot 2](figures/screenshots/cdc-2.png)
+
 ## How To Use
 
 The InstantExpert do not require any frameworks and can be integrated into any website using pure HTML. To use it, please follow the steps below.

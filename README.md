@@ -24,13 +24,13 @@
 - [Supported Browsers](#supported-browsers)
 - [Feedback](#feedback)
 - [License](#license)
-- [Acknowledgements](#acknowledgements)
+- [Acknowledgements & Citation](#acknowledgements-&-citation)
 
 ## Introduction
 
 This project presents the Instant Expert, an open-source web framework to build and integrate voice-enabled smart assistants (i.e. chatbots) for any web platform regardless of the underlying domain and technology. The component allows web developers to incorporate an operational chatbot into their websites by simply adding as little as a single line of HTML code while customizations are enabled for more advanced use cases. The component entails an encapsulated user interface, that accepts natural language questions via text and speech inputs as well as selection from a predefined list of questions, and a knowledge generation module that processes a question to map it to the configured data resource and return the answer. Instant Expert is capable of automatically parsing, processing, and modeling internal (same-origin) or external (cross-origin) Frequently Asked Questions (FAQ) webpages as an information resource as well as communicating with an external knowledge engine for ontology-powered inference and dynamic data utilization. The presented framework is powered by advanced web technologies to ensure reusability and reliability and by deep learning to perform accurate natural language mappings. A use case for creating an informatory chatbot for COVID-19 based on the Centers for Disease Control and Prevention (CDC) data is presented to demonstrate the framework’s usage and benefits. The framework can operate completely on the client-side ensuring data privacy and can especially be valuable for individual developers, academic research groups, small companies, non-profits, and public offices that may not have the resources for the development and maintenance of commercial smart assistants for their organization.
 
-For the full publication, please visit [https://arxiv.org/abs/2007.00747](https://arxiv.org/abs/2007.00747).
+For the full publication, please visit [https://doi.org/10.3390/bdcc5040057](https://doi.org/10.3390/bdcc5040057).
 
 Conversation Screen | List of Example Questions
 :-------------------------:|:-------------------------:
@@ -218,6 +218,8 @@ Feel free to send us feedback by filing an issue.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgements
+## Acknowledgements & Citation
 
 This project is developed by the University of Iowa Hydroinformatics Lab (UIHI Lab): [https://hydroinformatics.uiowa.edu/](https://hydroinformatics.uiowa.edu/).
+  
+Sermet, Y., & Demir, I. (2021). A Semantic Web Framework for Automated Smart Assistants: A Case Study for Public Health. Big Data and Cognitive Computing, 5(4), 57.

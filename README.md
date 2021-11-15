@@ -24,7 +24,7 @@
 - [Supported Browsers](#supported-browsers)
 - [Feedback](#feedback)
 - [License](#license)
-- [Acknowledgements & Citation](#acknowledgements-&-citation)
+- [Acknowledgements & Citation](#acknowledgements--citation)
 
 ## Introduction
 
@@ -221,5 +221,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgements & Citation
 
 This project is developed by the University of Iowa Hydroinformatics Lab (UIHI Lab): [https://hydroinformatics.uiowa.edu/](https://hydroinformatics.uiowa.edu/).
-  
+ 
+```
 Sermet, Y., & Demir, I. (2021). A Semantic Web Framework for Automated Smart Assistants: A Case Study for Public Health. Big Data and Cognitive Computing, 5(4), 57.
+```
